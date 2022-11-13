@@ -490,7 +490,7 @@ PROGS="ls awk grep cat mount xargs file ldd strings"
 for PROG in $PROGS; do
 	which $PROG 2>&1 > /dev/null
 	if [ ! $? = "0" ]; then
-		echo "ERROR: Dependend program '$PROG' is mising.  Can't run.  Sorry!"
+		echo "ERROR: Dependent program '$PROG' is mising.  Can't run.  Sorry!"
 		exit 1
 	fi
 done
